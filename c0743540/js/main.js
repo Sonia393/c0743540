@@ -1,24 +1,6 @@
 ﻿// Your code here!
-function createcircle(radius) {
-    return {
-        radius,
-        draw: function() {
-            console.log('draw');
-        }
-    };
+var sum = 0;
+for (i = 1109; i >= 119; i -= 11) {
+    sum += i;
 }
-const circle = createcircle(1);
-circle.draw();
-
-/*const circle = {
-    radius: 1,
-    location: {
-        x: 1, y: 1
-    },
-    draw: function () {
-        console.log('draw');
-    }
-
-
-};
-circle.draw();*/
+document.write(sum)
