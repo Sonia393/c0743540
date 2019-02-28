@@ -7,6 +7,17 @@
 </head>
 <body>
     <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+    <script>
+        function createcircle(radius) {
+            return {
+                radius,
+                draw: function () {
+                    console.log('draw');
+                }
+            };
+        }
+        const circle = createcircle(1);
+        circle.draw();
+    </script>
 </body>
 </html>
