@@ -8,7 +8,7 @@
 <body>
     <div>Content goes here!</div>
     <script>
-        function createcircle(radius) {
+       /* function createcircle(radius) {
             return {
                 radius,
                 draw: function () {
@@ -16,8 +16,16 @@
                 }
             };
         }
-        const circle = createcircle(1);
-        circle.draw();
+        const circle = createcircle(1);*/
+
+        function circle(radius) {
+            console.log('this', this);
+            this.radius = radius;
+            this.draw = function () {
+                console.log('draw');
+            }
+        } const another = new circle(1);
+        
     </script>
 </body>
 </html>
